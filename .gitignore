@@ -1,0 +1,15 @@
+node_modules/
+dist/
+analytics/node_modules/
+analytics/public/admin/
+analytics/.wrangler/
+analytics/.dev.vars
+.env
+.env.*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+vite.admin.config.js
+vite.admin.config.d.ts

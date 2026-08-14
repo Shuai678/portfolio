@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "nicolo-portfolio-analytics",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-14",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "ANALYTICS_DB",
+      "database_name": "nicolo-portfolio-analytics",
+      "database_id": "31f78dc4-ba30-4380-bd44-f37f25ccabda",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "SITE_ORIGIN": "https://shuai678.github.io",
+    "SITE_PATH_PREFIX": "/portfolio",
+    "GITHUB_CLIENT_ID": "Ov23liHjUoUYeQ1pOg3I",
+    "GITHUB_ADMIN_ID": "118019556"
+  },
+  "secrets": {
+    "required": [
+      "VISITOR_HASH_KEY",
+      "SESSION_SIGNING_KEY",
+      "GITHUB_CLIENT_SECRET"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  }
+}

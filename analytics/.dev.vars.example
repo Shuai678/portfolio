@@ -1,0 +1,3 @@
+VISITOR_HASH_KEY="replace-with-at-least-32-random-bytes"
+SESSION_SIGNING_KEY="replace-with-a-different-32-byte-random-secret"
+GITHUB_CLIENT_SECRET="replace-with-github-oauth-client-secret"
