@@ -25,11 +25,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-section,
-footer {
-  scroll-margin-top: 88px;
-}
-
 button,
 a {
   -webkit-tap-highlight-color: transparent;
